@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80448FD82932DA9F0022DBE5 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FD72932DA9F0022DBE5 /* HoneymoonModel.swift */; };
+		80448FDB2932DB790022DBE5 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FDA2932DB790022DBE5 /* HoneymoonData.swift */; };
+		80448FDF2932DC0B0022DBE5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FDE2932DC0B0022DBE5 /* CardView.swift */; };
+		80448FE12932DF9D0022DBE5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FE02932DF9D0022DBE5 /* HeaderView.swift */; };
+		80448FE32932E1930022DBE5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FE22932E1930022DBE5 /* FooterView.swift */; };
+		80448FE62933EE650022DBE5 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FE52933EE650022DBE5 /* HeaderComponent.swift */; };
+		80448FE82933F15F0022DBE5 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FE72933F15F0022DBE5 /* GuideComponent.swift */; };
+		80448FEA2933F8890022DBE5 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80448FE92933F8890022DBE5 /* GuideView.swift */; };
 		80A1213E29316F1F003189DB /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1213D29316F1F003189DB /* HoneymoonApp.swift */; };
 		80A1214029316F1F003189DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1213F29316F1F003189DB /* ContentView.swift */; };
 		80A1214229316F1F003189DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A1214129316F1F003189DB /* Assets.xcassets */; };
 		80A1214529316F1F003189DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A1214429316F1F003189DB /* Preview Assets.xcassets */; };
+		80A1214C29316F3C003189DB /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 80A1214B29316F3C003189DB /* Sounds */; };
+		80A12153293177D6003189DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A12152293177D6003189DB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80448FD72932DA9F0022DBE5 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		80448FDA2932DB790022DBE5 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
+		80448FDE2932DC0B0022DBE5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		80448FE02932DF9D0022DBE5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		80448FE22932E1930022DBE5 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		80448FE52933EE650022DBE5 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		80448FE72933F15F0022DBE5 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
+		80448FE92933F8890022DBE5 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		80A1213A29316F1E003189DB /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A1213D29316F1F003189DB /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		80A1213F29316F1F003189DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80A1214129316F1F003189DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A1214429316F1F003189DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80A1214B29316F3C003189DB /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		80A1214F293174CC003189DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		80A12152293177D6003189DB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80448FD92932DAA40022DBE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80448FD72932DA9F0022DBE5 /* HoneymoonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80448FDC2932DB800022DBE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				80448FDA2932DB790022DBE5 /* HoneymoonData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		80448FDD2932DBFC0022DBE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80A1213F29316F1F003189DB /* ContentView.swift */,
+				80448FDE2932DC0B0022DBE5 /* CardView.swift */,
+				80448FE02932DF9D0022DBE5 /* HeaderView.swift */,
+				80448FE22932E1930022DBE5 /* FooterView.swift */,
+				80448FE92933F8890022DBE5 /* GuideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80448FE42933EE4C0022DBE5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				80448FE52933EE650022DBE5 /* HeaderComponent.swift */,
+				80448FE72933F15F0022DBE5 /* GuideComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		80A1213129316F1E003189DB = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +109,14 @@
 		80A1213C29316F1E003189DB /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				80448FE42933EE4C0022DBE5 /* Components */,
+				80448FDD2932DBFC0022DBE5 /* View */,
+				80448FDC2932DB800022DBE5 /* Data */,
+				80448FD92932DAA40022DBE5 /* Models */,
+				80A1214F293174CC003189DB /* Info.plist */,
+				80A1214B29316F3C003189DB /* Sounds */,
 				80A1213D29316F1F003189DB /* HoneymoonApp.swift */,
-				80A1213F29316F1F003189DB /* ContentView.swift */,
+				80A12152293177D6003189DB /* LaunchScreen.storyboard */,
 				80A1214129316F1F003189DB /* Assets.xcassets */,
 				80A1214329316F1F003189DB /* Preview Content */,
 			);
@@ -125,6 +189,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A1214C29316F3C003189DB /* Sounds in Resources */,
+				80A12153293177D6003189DB /* LaunchScreen.storyboard in Resources */,
 				80A1214529316F1F003189DB /* Preview Assets.xcassets in Resources */,
 				80A1214229316F1F003189DB /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80448FDB2932DB790022DBE5 /* HoneymoonData.swift in Sources */,
+				80448FE32932E1930022DBE5 /* FooterView.swift in Sources */,
+				80448FE12932DF9D0022DBE5 /* HeaderView.swift in Sources */,
+				80448FD82932DA9F0022DBE5 /* HoneymoonModel.swift in Sources */,
+				80448FE62933EE650022DBE5 /* HeaderComponent.swift in Sources */,
 				80A1214029316F1F003189DB /* ContentView.swift in Sources */,
 				80A1213E29316F1F003189DB /* HoneymoonApp.swift in Sources */,
+				80448FDF2932DC0B0022DBE5 /* CardView.swift in Sources */,
+				80448FE82933F15F0022DBE5 /* GuideComponent.swift in Sources */,
+				80448FEA2933F8890022DBE5 /* GuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +341,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
+				DEVELOPMENT_TEAM = FV4ACN6AD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Honeymoon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,11 +372,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
+				DEVELOPMENT_TEAM = FV4ACN6AD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Honeymoon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
