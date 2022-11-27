@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FooterView: View {
+    
     //MARK: - Properties
     @Binding var showBookingAlert: Bool
     
@@ -19,7 +20,6 @@ struct FooterView: View {
             Spacer()
             
             Button {
-//                print("success")
                 self.showBookingAlert.toggle()
             } label: {
                 Text("Book Destination".uppercased())

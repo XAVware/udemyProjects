@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    
     //MARK: - Properties
     @Binding var showGuideView: Bool
     

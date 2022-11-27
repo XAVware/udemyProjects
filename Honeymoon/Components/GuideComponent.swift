@@ -31,6 +31,7 @@ struct GuideComponent: View {
                         .font(.footnote)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.pink)
+                    
                 }
                 Divider().padding(.bottom, 4)
                 Text(description)

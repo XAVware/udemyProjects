@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderComponent: View {
+    
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             Capsule().frame(width: 120, height: 6)

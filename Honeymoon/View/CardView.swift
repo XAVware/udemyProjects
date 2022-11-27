@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardView: View {
     
+    
     // MARK: Properties
     let id = UUID()
     var honeymoon: Destination

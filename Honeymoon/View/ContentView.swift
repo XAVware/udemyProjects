@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //MARK: - PROPERTIES
+    
     @State var showAlert: Bool = false
     @State var showGuide: Bool = false
     
