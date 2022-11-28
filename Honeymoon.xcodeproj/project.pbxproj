@@ -25,6 +25,7 @@
 		80D3DF702934273200C1AB7C /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF6F2934273200C1AB7C /* ButtonModifier.swift */; };
 		80D3DF722934276800C1AB7C /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF712934276800C1AB7C /* InfoView.swift */; };
 		80D3DF752935233B00C1AB7C /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF742935233B00C1AB7C /* SymbolModifier.swift */; };
+		80D3DF7829352A3700C1AB7C /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF7729352A3700C1AB7C /* CardTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		80D3DF6F2934273200C1AB7C /* ButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		80D3DF712934276800C1AB7C /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		80D3DF742935233B00C1AB7C /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		80D3DF7729352A3700C1AB7C /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		80A1213C29316F1E003189DB /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				80D3DF7629352A2500C1AB7C /* Extensions */,
 				80D3DF732934277500C1AB7C /* Modifiers */,
 				80448FE42933EE4C0022DBE5 /* Components */,
 				80448FDD2932DBFC0022DBE5 /* View */,
@@ -149,6 +152,14 @@
 				80D3DF742935233B00C1AB7C /* SymbolModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		80D3DF7629352A2500C1AB7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80D3DF7729352A3700C1AB7C /* CardTransition.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				80448FE32932E1930022DBE5 /* FooterView.swift in Sources */,
 				80448FE12932DF9D0022DBE5 /* HeaderView.swift in Sources */,
 				80D3DF6E2934272D00C1AB7C /* TitleModifier.swift in Sources */,
+				80D3DF7829352A3700C1AB7C /* CardTransition.swift in Sources */,
 				80D3DF752935233B00C1AB7C /* SymbolModifier.swift in Sources */,
 				80448FD82932DA9F0022DBE5 /* HoneymoonModel.swift in Sources */,
 				80D3DF722934276800C1AB7C /* InfoView.swift in Sources */,
