@@ -24,6 +24,7 @@
 		80D3DF6E2934272D00C1AB7C /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF6D2934272D00C1AB7C /* TitleModifier.swift */; };
 		80D3DF702934273200C1AB7C /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF6F2934273200C1AB7C /* ButtonModifier.swift */; };
 		80D3DF722934276800C1AB7C /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF712934276800C1AB7C /* InfoView.swift */; };
+		80D3DF752935233B00C1AB7C /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3DF742935233B00C1AB7C /* SymbolModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		80D3DF6D2934272D00C1AB7C /* TitleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		80D3DF6F2934273200C1AB7C /* ButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		80D3DF712934276800C1AB7C /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		80D3DF742935233B00C1AB7C /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				80D3DF6D2934272D00C1AB7C /* TitleModifier.swift */,
 				80D3DF6F2934273200C1AB7C /* ButtonModifier.swift */,
+				80D3DF742935233B00C1AB7C /* SymbolModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				80448FE32932E1930022DBE5 /* FooterView.swift in Sources */,
 				80448FE12932DF9D0022DBE5 /* HeaderView.swift in Sources */,
 				80D3DF6E2934272D00C1AB7C /* TitleModifier.swift in Sources */,
+				80D3DF752935233B00C1AB7C /* SymbolModifier.swift in Sources */,
 				80448FD82932DA9F0022DBE5 /* HoneymoonModel.swift in Sources */,
 				80D3DF722934276800C1AB7C /* InfoView.swift in Sources */,
 				80448FE62933EE650022DBE5 /* HeaderComponent.swift in Sources */,
