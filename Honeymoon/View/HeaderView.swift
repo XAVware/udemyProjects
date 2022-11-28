@@ -11,16 +11,20 @@ struct HeaderView: View {
     
     //MARK: - Properties
     @Binding var showGuideView: Bool
-    
+    @Binding var showInfoView: Bool
     var body: some View {
         HStack {
             Button {
-                print("information")
+//                print("information")
+                self.showInfoView.toggle()
             } label: {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
             }
             .accentColor(Color.primary)
+            .sheet(isPresented: $showInfoView) {
+                InfoView()
+            }
             
             Spacer()
 
@@ -33,7 +37,6 @@ struct HeaderView: View {
             
             Button {
                 self.showGuideView.toggle()
-//                print("guide")
             } label: {
                 Image(systemName: "questionmark.circle")
                     .font(.system(size: 24, weight: .regular))
@@ -49,8 +52,10 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     @State static var showGuide: Bool = false
+    @State static var showInfo: Bool = false
+    
     static var previews: some View {
-        HeaderView(showGuideView: $showGuide)
+        HeaderView(showGuideView: $showGuide, showInfoView: $showInfo)
             .previewLayout(.fixed(width: 375, height: 80))
     }
 }

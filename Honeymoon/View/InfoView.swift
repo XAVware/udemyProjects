@@ -46,12 +46,6 @@ struct InfoView: View {
   }
 }
 
-struct InfoView_Previews: PreviewProvider {
-  static var previews: some View {
-    InfoView()
-  }
-}
-
 struct AppInfoView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
@@ -99,5 +93,13 @@ struct CreditsView: View {
         .multilineTextAlignment(.leading)
         .font(.footnote)
     }
+  }
+}
+
+//MARK: - Previews
+
+struct InfoView_Previews: PreviewProvider {
+  static var previews: some View {
+    InfoView()
   }
 }
