@@ -90,8 +90,8 @@ struct ContentView: View {
             Spacer()
             
             //MARK: - Cards
-//            CardView(honeymoon: honeymoonData[2])
-//                .padding()
+            //            CardView(honeymoon: honeymoonData[2])
+            //                .padding()
             
             ZStack {
                 ForEach(cardViews) { cardView in
@@ -137,18 +137,19 @@ struct ContentView: View {
                                         self.cardRemovalTransition = .trailingBottom
                                     }
                                 })
-                                .onEnded({ (value) in
-                                    guard case .second(true, let drag?) = value else {
-                                        return
-                                    }
-                                    
-                                    if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
-                                        self.moveCards()
-                                    }
-                                    
-                                })
+                                    .onEnded({ (value) in
+                                        guard case .second(true, let drag?) = value else {
+                                            return
+                                        }
+                                        
+                                        if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold {
+                                            playSound(sound: "sound-rise", type: "mp3")
+                                            self.moveCards()
+                                        }
+                                        
+                                    })
                         ).transition(self.cardRemovalTransition)
-                        
+                    
                 }
             }
             .padding(.horizontal)
