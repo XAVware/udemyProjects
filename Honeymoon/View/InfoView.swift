@@ -49,27 +49,27 @@ struct InfoView: View {
 struct AppInfoView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
-      RowAppInfoView(ItemOne: "Application", ItemTwo: "Honeymoon")
-      RowAppInfoView(ItemOne: "Compatibility", ItemTwo: "iPhone and iPad")
-      RowAppInfoView(ItemOne: "Developer", ItemTwo: "Ryan Smetana")
-      RowAppInfoView(ItemOne: "Designer", ItemTwo: "Ryan Smetana")
-      RowAppInfoView(ItemOne: "Website", ItemTwo: "swiftuimasterclass.com")
-      RowAppInfoView(ItemOne: "Version", ItemTwo: "1.0.0")
+      RowAppInfoView(itemOne: "Application", itemTwo: "Honeymoon")
+      RowAppInfoView(itemOne: "Compatibility", itemTwo: "iPhone and iPad")
+      RowAppInfoView(itemOne: "Developer", itemTwo: "Ryan Smetana")
+      RowAppInfoView(itemOne: "Designer", itemTwo: "Ryan Smetana")
+      RowAppInfoView(itemOne: "Website", itemTwo: "swiftuimasterclass.com")
+      RowAppInfoView(itemOne: "Version", itemTwo: "1.0.0")
     }
   }
 }
 
 struct RowAppInfoView: View {
   // MARK: - PROPERTIES
-  var ItemOne: String
-  var ItemTwo: String
+  var itemOne: String
+  var itemTwo: String
   
   var body: some View {
     VStack {
       HStack {
-        Text(ItemOne).foregroundColor(Color.gray)
+        Text(itemOne).foregroundColor(Color.gray)
         Spacer()
-        Text(ItemTwo)
+        Text(itemTwo)
       }
       Divider()
     }
