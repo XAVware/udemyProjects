@@ -11,6 +11,10 @@
 		940A651C2517D525000A9B44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A651B2517D525000A9B44 /* ContentView.swift */; };
 		940A651E2517D528000A9B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940A651D2517D528000A9B44 /* Assets.xcassets */; };
 		940A65212517D528000A9B44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940A65202517D528000A9B44 /* Preview Assets.xcassets */; };
+		940A652B2517D7F4000A9B44 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A652A2517D7F4000A9B44 /* NetworkManager.swift */; };
+		940A652F2517D90B000A9B44 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A652E2517D90B000A9B44 /* PostData.swift */; };
+		940A6534251945D9000A9B44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A6533251945D9000A9B44 /* DetailView.swift */; };
+		940A653725194F4C000A9B44 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940A653625194F4C000A9B44 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		940A651D2517D528000A9B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940A65202517D528000A9B44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940A65222517D528000A9B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940A652A2517D7F4000A9B44 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		940A652E2517D90B000A9B44 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		940A6533251945D9000A9B44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		940A653625194F4C000A9B44 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,9 @@
 		940A65182517D525000A9B44 /* H4X0R News */ = {
 			isa = PBXGroup;
 			children = (
+				940A65292517D7E2000A9B44 /* Models */,
 				940A65192517D525000A9B44 /* H4X0R_NewsApp.swift */,
-				940A651B2517D525000A9B44 /* ContentView.swift */,
+				940A6531251945BD000A9B44 /* Views */,
 				940A651D2517D528000A9B44 /* Assets.xcassets */,
 				940A65222517D528000A9B44 /* Info.plist */,
 				940A651F2517D528000A9B44 /* Preview Content */,
@@ -67,6 +76,25 @@
 				940A65202517D528000A9B44 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		940A65292517D7E2000A9B44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				940A652A2517D7F4000A9B44 /* NetworkManager.swift */,
+				940A652E2517D90B000A9B44 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		940A6531251945BD000A9B44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				940A651B2517D525000A9B44 /* ContentView.swift */,
+				940A6533251945D9000A9B44 /* DetailView.swift */,
+				940A653625194F4C000A9B44 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940A652B2517D7F4000A9B44 /* NetworkManager.swift in Sources */,
+				940A652F2517D90B000A9B44 /* PostData.swift in Sources */,
 				940A651C2517D525000A9B44 /* ContentView.swift in Sources */,
+				940A653725194F4C000A9B44 /* WebView.swift in Sources */,
+				940A6534251945D9000A9B44 /* DetailView.swift in Sources */,
 				940A651A2517D525000A9B44 /* H4X0R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
