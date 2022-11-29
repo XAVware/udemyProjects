@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     
+    
     //MARK: - Properties
     @Binding var showGuideView: Bool
     @Binding var showInfoView: Bool
