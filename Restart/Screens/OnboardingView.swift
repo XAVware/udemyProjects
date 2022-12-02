@@ -50,6 +50,8 @@ struct OnboardingView: View {
                 //MARK: - Footer
                 
                 ZStack {
+                    
+                    // 1. Slider Background
                     Capsule()
                         .fill(Color.white.opacity(0.2))
                     
@@ -57,18 +59,24 @@ struct OnboardingView: View {
                         .fill(Color.white.opacity(0.2))
                         .padding(8)
                     
+                    // 2. Call-to-action (Static)
+                    
                     Text("Get Started")
                         .font(.system(.title3, design: .rounded))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .offset(x: 20)
                     
+                    // 3. Capsule (Dynamic Width)
+                    
                     HStack {
                         Capsule().fill(Color("ColorRed"))
-                            .frame(width: 80)
+                            .frame(width: buttonOffset + 80)
                         
                         Spacer()
                     }
+                    
+                    // 4. Circle (Draggable)
                     
                     HStack {
                         ZStack {
@@ -85,11 +93,21 @@ struct OnboardingView: View {
                         .offset(x: buttonOffset)
                         .gesture(
                             DragGesture()
-                                .onChanged { gesture in
+                                .onChanged( { gesture in
                                     if gesture.translation.width > 0 && buttonOffset <= buttonWidth - 80 {
                                         buttonOffset = gesture.translation.width
                                     }
-                                }
+                                })
+                                .onEnded( { _ in
+                                    if buttonOffset > buttonWidth / 2 {
+                                        buttonOffset = buttonWidth - 80
+                                        isOnboardingViewActive = false
+                                    } else {
+                                        buttonOffset = 0
+                                    }
+                                    
+                                    buttonOffset = 0
+                                })
                         )
                         
                         Spacer()
