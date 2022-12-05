@@ -15,7 +15,6 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 20) {
             // MARK: - Header
-            
             Spacer()
             
             ZStack {
@@ -34,7 +33,6 @@ struct HomeView: View {
             }
             
             // MARK: - Center
-            
             Text("The time that leads to mastery is dependent on the intensity of our focus.")
                 .font(.title3)
                 .fontWeight(.light)
@@ -43,11 +41,11 @@ struct HomeView: View {
                 .padding()
              
             // MARK: - Footer
-            
             Spacer()
             
             Button(action: {
                 withAnimation {
+                    playSound(sound: "success", type: "m4a")
                     isOnboardingViewActive = true
                 }
             }) {
