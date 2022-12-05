@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80700FC2293E7B6600572489 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80700FC1293E7B6600572489 /* Note.swift */; };
 		80FE0598293E751200AEA9C0 /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80FE0597293E751200AEA9C0 /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		80FE059D293E751200AEA9C0 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059C293E751200AEA9C0 /* NotesApp.swift */; };
 		80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059E293E751200AEA9C0 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		80700FC1293E7B6600572489 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		80FE0591293E751200AEA9C0 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE0597293E751200AEA9C0 /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE059C293E751200AEA9C0 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -58,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80700FBF293E7B0B00572489 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80700FC1293E7B6600572489 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80700FC0293E7B1700572489 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80FE059E293E751200AEA9C0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		80FE058A293E751200AEA9C0 = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +96,9 @@
 		80FE059B293E751200AEA9C0 /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				80700FBF293E7B0B00572489 /* Model */,
 				80FE059C293E751200AEA9C0 /* NotesApp.swift */,
-				80FE059E293E751200AEA9C0 /* ContentView.swift */,
+				80700FC0293E7B1700572489 /* View */,
 				80FE05A0293E751400AEA9C0 /* Assets.xcassets */,
 				80FE05A2293E751400AEA9C0 /* Preview Content */,
 			);
@@ -194,6 +213,7 @@
 			files = (
 				80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */,
 				80FE059D293E751200AEA9C0 /* NotesApp.swift in Sources */,
+				80700FC2293E7B6600572489 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
