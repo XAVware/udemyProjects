@@ -46,6 +46,9 @@ struct OnboardingView: View {
                 //MARK: - Center
                 ZStack {
                     CircleGroupView(shapeColor: .white, shapeOpacity: 0.2)
+                        .offset(x: imageOffset.width * -1)
+                        .blur(radius: abs(imageOffset.width / 5))
+                        .animation(.easeOut(duration: 1), value: imageOffset)
                     
                     Image("character-1")
                         .resizable()
@@ -53,6 +56,7 @@ struct OnboardingView: View {
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1), value: isAnimating)
                         .offset(x: imageOffset.width * 1.2, y: 0)
+                        .rotationEffect(.degrees(Double(imageOffset.width / 20)))
                         .gesture(
                             DragGesture()
                                 .onChanged({ gesture in
@@ -60,7 +64,11 @@ struct OnboardingView: View {
                                         imageOffset = gesture.translation
                                     }
                                 })
+                                .onEnded { _ in
+                                    imageOffset = .zero
+                                }
                         )
+                        .animation(.easeOut(duration: 1), value: imageOffset)
                 }
                 
                 Spacer()
