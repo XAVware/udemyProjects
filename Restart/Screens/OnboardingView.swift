@@ -14,6 +14,7 @@ struct OnboardingView: View {
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
     @State private var buttonOffset: CGFloat = 0
     @State private var isAnimating: Bool = false
+    @State private var imageOffset: CGSize = .zero
     
     
     var body: some View {
@@ -42,7 +43,6 @@ struct OnboardingView: View {
                 .offset(y: isAnimating ? 0 : -40)
                 .animation(.easeOut(duration: 1), value: isAnimating)
                 
-                
                 //MARK: - Center
                 ZStack {
                     CircleGroupView(shapeColor: .white, shapeOpacity: 0.2)
@@ -52,6 +52,15 @@ struct OnboardingView: View {
                         .scaledToFit()
                         .opacity(isAnimating ? 1 : 0)
                         .animation(.easeOut(duration: 1), value: isAnimating)
+                        .offset(x: imageOffset.width * 1.2, y: 0)
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ gesture in
+                                    if abs(imageOffset.width) <= 150 {
+                                        imageOffset = gesture.translation
+                                    }
+                                })
+                        )
                 }
                 
                 Spacer()
@@ -59,7 +68,6 @@ struct OnboardingView: View {
                 //MARK: - Footer
                 
                 ZStack {
-                    
                     // 1. Slider Background
                     Capsule()
                         .fill(Color.white.opacity(0.2))
@@ -69,7 +77,6 @@ struct OnboardingView: View {
                         .padding(8)
                     
                     // 2. Call-to-action (Static)
-                    
                     Text("Get Started")
                         .font(.system(.title3, design: .rounded))
                         .fontWeight(.bold)
@@ -77,7 +84,6 @@ struct OnboardingView: View {
                         .offset(x: 20)
                     
                     // 3. Capsule (Dynamic Width)
-                    
                     HStack {
                         Capsule().fill(Color("ColorRed"))
                             .frame(width: buttonOffset + 80)
