@@ -15,6 +15,7 @@ struct OnboardingView: View {
     @State private var isAnimating: Bool = false
     @State private var imageOffset: CGSize = .zero
     @State private var indicatorOpacity: Double = 1.0
+    @State private var textTitle: String = "Share."
     
     var body: some View {
         ZStack {
@@ -26,10 +27,12 @@ struct OnboardingView: View {
                 Spacer()
                 
                 VStack(spacing: 0) {
-                    Text("Share.")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
+                        .transition(.opacity)
+                        .id(textTitle)
                     
                     Text("It's not how much love we give but how much love we put into giving")
                         .font(.title3)
@@ -63,6 +66,7 @@ struct OnboardingView: View {
                                         imageOffset = gesture.translation
                                         withAnimation(.linear(duration: 0.25)) {
                                             indicatorOpacity = 0
+                                            textTitle = "Give."
                                         }
                                     }
                                 })
@@ -70,6 +74,7 @@ struct OnboardingView: View {
                                     imageOffset = .zero
                                     withAnimation(.linear(duration: 0.25)) {
                                         indicatorOpacity = 1
+                                        textTitle = "Share."
                                     }
                                 }
                         )
@@ -89,7 +94,6 @@ struct OnboardingView: View {
                 Spacer()
                 
                 //MARK: - Footer
-                
                 ZStack {
                     // 1. Slider Background
                     Capsule()
@@ -110,12 +114,10 @@ struct OnboardingView: View {
                     HStack {
                         Capsule().fill(Color("ColorRed"))
                             .frame(width: buttonOffset + 80)
-                        
                         Spacer()
                     }
                     
                     // 4. Circle (Draggable)
-                    
                     HStack {
                         ZStack {
                             Circle()
@@ -147,7 +149,6 @@ struct OnboardingView: View {
                                     }
                                 })
                         )
-                        
                         Spacer()
                     }
                 }//: Footer
