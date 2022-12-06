@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		80700FC2293E7B6600572489 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80700FC1293E7B6600572489 /* Note.swift */; };
 		80F9AABF293EDFC10001D7B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AABE293EDFC10001D7B4 /* DetailView.swift */; };
+		80F9AAC1293EEE200001D7B4 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AAC0293EEE200001D7B4 /* CreditsView.swift */; };
+		80F9AAC4293EEEBC0001D7B4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AAC3293EEEBC0001D7B4 /* HeaderView.swift */; };
 		80FE0598293E751200AEA9C0 /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80FE0597293E751200AEA9C0 /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		80FE059D293E751200AEA9C0 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059C293E751200AEA9C0 /* NotesApp.swift */; };
 		80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059E293E751200AEA9C0 /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		80700FC1293E7B6600572489 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		80F9AABE293EDFC10001D7B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		80F9AAC0293EEE200001D7B4 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		80F9AAC3293EEEBC0001D7B4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		80FE0591293E751200AEA9C0 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE0597293E751200AEA9C0 /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE059C293E751200AEA9C0 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -75,8 +79,17 @@
 			children = (
 				80FE059E293E751200AEA9C0 /* ContentView.swift */,
 				80F9AABE293EDFC10001D7B4 /* DetailView.swift */,
+				80F9AAC0293EEE200001D7B4 /* CreditsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		80F9AAC2293EEE740001D7B4 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				80F9AAC3293EEEBC0001D7B4 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		80FE058A293E751200AEA9C0 = {
@@ -99,6 +112,7 @@
 		80FE059B293E751200AEA9C0 /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				80F9AAC2293EEE740001D7B4 /* Component */,
 				80700FBF293E7B0B00572489 /* Model */,
 				80FE059C293E751200AEA9C0 /* NotesApp.swift */,
 				80700FC0293E7B1700572489 /* View */,
@@ -215,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */,
+				80F9AAC4293EEEBC0001D7B4 /* HeaderView.swift in Sources */,
 				80F9AABF293EDFC10001D7B4 /* DetailView.swift in Sources */,
 				80FE059D293E751200AEA9C0 /* NotesApp.swift in Sources */,
+				80F9AAC1293EEE200001D7B4 /* CreditsView.swift in Sources */,
 				80700FC2293E7B6600572489 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
