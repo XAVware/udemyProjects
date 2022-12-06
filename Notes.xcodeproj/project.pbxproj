@@ -11,6 +11,7 @@
 		80F9AABF293EDFC10001D7B4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AABE293EDFC10001D7B4 /* DetailView.swift */; };
 		80F9AAC1293EEE200001D7B4 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AAC0293EEE200001D7B4 /* CreditsView.swift */; };
 		80F9AAC4293EEEBC0001D7B4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AAC3293EEEBC0001D7B4 /* HeaderView.swift */; };
+		80F9AAC6293EFA720001D7B4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F9AAC5293EFA720001D7B4 /* SettingsView.swift */; };
 		80FE0598293E751200AEA9C0 /* Notes Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80FE0597293E751200AEA9C0 /* Notes Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		80FE059D293E751200AEA9C0 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059C293E751200AEA9C0 /* NotesApp.swift */; };
 		80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FE059E293E751200AEA9C0 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 		80F9AABE293EDFC10001D7B4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		80F9AAC0293EEE200001D7B4 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		80F9AAC3293EEEBC0001D7B4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		80F9AAC5293EFA720001D7B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		80FE0591293E751200AEA9C0 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE0597293E751200AEA9C0 /* Notes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FE059C293E751200AEA9C0 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				80FE059E293E751200AEA9C0 /* ContentView.swift */,
 				80F9AABE293EDFC10001D7B4 /* DetailView.swift */,
 				80F9AAC0293EEE200001D7B4 /* CreditsView.swift */,
+				80F9AAC5293EFA720001D7B4 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F9AAC6293EFA720001D7B4 /* SettingsView.swift in Sources */,
 				80FE059F293E751200AEA9C0 /* ContentView.swift in Sources */,
 				80F9AAC4293EEEBC0001D7B4 /* HeaderView.swift in Sources */,
 				80F9AABF293EDFC10001D7B4 /* DetailView.swift in Sources */,
