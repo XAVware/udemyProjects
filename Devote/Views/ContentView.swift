@@ -13,6 +13,10 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @State var task: String = ""
+    
+    private var isButtonDisabled: Bool {
+        task.isEmpty
+    }
 
     // MARK: - Fetching Data
     @FetchRequest(
@@ -35,6 +39,9 @@ struct ContentView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+            
+            task = ""
+            hideKeyboard()
         }
     }
 
@@ -70,10 +77,11 @@ struct ContentView: View {
                         Text("SAVE")
                         Spacer()
                     }
+                    .disabled(isButtonDisabled)
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)
-                    .background(Color.pink)
+                    .background(isButtonDisabled ? Color.gray : Color.pink)
                     .cornerRadius(10)
                 } //: VStack
                 .padding()
@@ -95,13 +103,8 @@ struct ContentView: View {
             } //: VStack
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
                 }
             } //: Toolbar
             Text("Select an item")
