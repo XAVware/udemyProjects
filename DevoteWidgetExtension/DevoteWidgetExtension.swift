@@ -60,7 +60,15 @@ struct DevoteWidgetExtension: Widget {
 
 struct DevoteWidgetExtension_Previews: PreviewProvider {
     static var previews: some View {
-        DevoteWidgetExtensionEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        Group {
+            DevoteWidgetExtensionEntryView(entry: SimpleEntry(date: Date()))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+            
+            DevoteWidgetExtensionEntryView(entry: SimpleEntry(date: Date()))
+                .previewContext(WidgetPreviewContext(family: .systemMedium))
+            
+            DevoteWidgetExtensionEntryView(entry: SimpleEntry(date: Date()))
+                .previewContext(WidgetPreviewContext(family: .systemLarge))
+        }
     }
 }
