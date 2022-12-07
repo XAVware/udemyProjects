@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		80C28F65294039310096B1F6 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F64294039310096B1F6 /* NewTaskItemView.swift */; };
 		80C28F672940482D0096B1F6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F662940482D0096B1F6 /* BlankView.swift */; };
+		80C28F692940557F0096B1F6 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F682940557F0096B1F6 /* ListRowItemView.swift */; };
 		9405870929400EE5001D12A8 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9405870629400EE5001D12A8 /* sound-tap.mp3 */; };
 		9405870A29400EE5001D12A8 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9405870729400EE5001D12A8 /* sound-ding.mp3 */; };
 		9405870B29400EE5001D12A8 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9405870829400EE5001D12A8 /* sound-rise.mp3 */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		80C28F64294039310096B1F6 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		80C28F662940482D0096B1F6 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		80C28F682940557F0096B1F6 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		9405870629400EE5001D12A8 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		9405870729400EE5001D12A8 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		9405870829400EE5001D12A8 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				9405871729402D97001D12A8 /* BackgroundImageView.swift */,
 				80C28F64294039310096B1F6 /* NewTaskItemView.swift */,
 				80C28F662940482D0096B1F6 /* BlankView.swift */,
+				80C28F682940557F0096B1F6 /* ListRowItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,13 +84,6 @@
 				94B0DC0329400D7700907DA1 /* Devote.xcdatamodeld */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		9405870F29400F76001D12A8 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Style;
 			sourceTree = "<group>";
 		};
 		9405871029400F7F001D12A8 /* Utility */ = {
@@ -131,7 +127,6 @@
 				9405870E29400F33001D12A8 /* Models */,
 				9405870C29400F23001D12A8 /* Sounds */,
 				94B0DBFC29400D7600907DA1 /* Assets.xcassets */,
-				9405870F29400F76001D12A8 /* Style */,
 				9405871029400F7F001D12A8 /* Utility */,
 				9405871129400F86001D12A8 /* Extension */,
 				94B0DBFE29400D7700907DA1 /* Preview Content */,
@@ -226,6 +221,7 @@
 				9405871429401A8C001D12A8 /* Constant.swift in Sources */,
 				80C28F672940482D0096B1F6 /* BlankView.swift in Sources */,
 				94B0DC0529400D7700907DA1 /* Devote.xcdatamodeld in Sources */,
+				80C28F692940557F0096B1F6 /* ListRowItemView.swift in Sources */,
 				94058716294025A6001D12A8 /* HideKeyboard.swift in Sources */,
 				94B0DBF929400D7500907DA1 /* DevoteApp.swift in Sources */,
 				80C28F65294039310096B1F6 /* NewTaskItemView.swift in Sources */,
