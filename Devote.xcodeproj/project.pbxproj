@@ -15,6 +15,8 @@
 		8020E87B29411E1200156C39 /* DevoteWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8020E87A29411E1200156C39 /* DevoteWidgetExtension.swift */; };
 		8020E87D29411E1400156C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8020E87C29411E1400156C39 /* Assets.xcassets */; };
 		8020E88129411E1400156C39 /* DevoteWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8020E86F29411E1200156C39 /* DevoteWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8020E8862941228A00156C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B0DBFC29400D7600907DA1 /* Assets.xcassets */; };
+		8020E8872941230B00156C39 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405871329401A8C001D12A8 /* Constant.swift */; };
 		80C28F65294039310096B1F6 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F64294039310096B1F6 /* NewTaskItemView.swift */; };
 		80C28F672940482D0096B1F6 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F662940482D0096B1F6 /* BlankView.swift */; };
 		80C28F692940557F0096B1F6 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C28F682940557F0096B1F6 /* ListRowItemView.swift */; };
@@ -309,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8020E8862941228A00156C39 /* Assets.xcassets in Resources */,
 				8020E87D29411E1400156C39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +338,7 @@
 				8020E87729411E1200156C39 /* DevoteWidgetExtensionBundle.swift in Sources */,
 				8020E87B29411E1200156C39 /* DevoteWidgetExtension.swift in Sources */,
 				8020E87929411E1200156C39 /* DevoteWidgetExtensionLiveActivity.swift in Sources */,
+				8020E8872941230B00156C39 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

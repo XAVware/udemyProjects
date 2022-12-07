@@ -42,7 +42,26 @@ struct DevoteWidgetExtensionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+//        Text(entry.date, style: .time)
+        GeometryReader { geometry in
+            ZStack {
+                backgroundGradient
+                
+                Image("rocket-small")
+                    .resizable()
+                    .scaledToFit()
+                
+                Image("logo")
+                    .resizable()
+                    .frame(width: 36, height: 36)
+                    .offset(
+                        x: (geometry.size.width / 2) - 20,
+                        y: (geometry.size.height / -2) + 20
+                    )
+                    .padding(.top, 12)
+                    .padding(.trailing, 12)
+            } //: ZStack
+        } //: Geometry Reader
     }
 }
 
@@ -53,8 +72,8 @@ struct DevoteWidgetExtension: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             DevoteWidgetExtensionEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Devote Launcher")
+        .description("This is an example widget for the personal task manager app.")
     }
 }
 
