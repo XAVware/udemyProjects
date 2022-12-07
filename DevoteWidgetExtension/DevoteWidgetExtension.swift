@@ -60,6 +60,20 @@ struct DevoteWidgetExtensionEntryView : View {
                     )
                     .padding(.top, 12)
                     .padding(.trailing, 12)
+                
+                HStack {
+                    Text("Just Do It")
+                        .foregroundColor(.white)
+                        .font(.system(.footnote, design: .rounded))
+                        .fontWeight(.bold)
+                        .padding(.vertical, 4)
+                        .padding(.horizontal, 12)
+                        .background(
+                            Color(red: 0, green: 0, blue: 0, opacity: 0.5)
+                                .blendMode(.overlay)
+                        )
+                    .clipShape(Capsule())
+                } //: HStack
             } //: ZStack
         } //: Geometry Reader
     }
