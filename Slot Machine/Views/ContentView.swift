@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var isActiveBet10: Bool = true
     @State private var isActiveBet20: Bool = false
     @State private var showingModal: Bool = false
-    
+    @State private var animatingSymbol: Bool = false
     
     // MARK: - Functions
     func spinReels() {
@@ -35,11 +35,8 @@ struct ContentView: View {
             if coins > highScore {
                 newHighScore()
             }
-            
         } else {
-            // Player loses
             playerLoses()
-            
         }
     }
     
