@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - Properties
+    @State private var isShowingInfoView: Bool = false
     
     
     // MARK: - Body
@@ -101,6 +102,45 @@ struct ContentView: View {
                 
                 // MARK: - Footer
                 Spacer()
+                
+                HStack {
+                    // MARK: - Bet 20
+                    HStack(alignment: .center, spacing: 10) {
+                        Button {
+                            print("Bet 20")
+                        } label: {
+                            Text("20")
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.white)
+                                .modifier(BetNumberModifier())
+                        }
+                        .modifier(BetCapsuleModifier())
+                        
+                        Image("gfx-casino-chips")
+                            .resizable()
+                            .opacity(0)
+                            .modifier(CasinoChipsModifier())
+                    } //: HStack
+
+                    // MARK: - Bet 10
+                    HStack(alignment: .center, spacing: 10) {
+                        Image("gfx-casino-chips")
+                            .resizable()
+                            .opacity(1)
+                            .modifier(CasinoChipsModifier())
+                        
+                        Button {
+                            print("Bet 10")
+                        } label: {
+                            Text("10")
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color.yellow)
+                                .modifier(BetNumberModifier())
+                        }
+                        .modifier(BetCapsuleModifier())
+                        
+                    } //: HStack
+                } //: HStack
             } //: VStack
             // MARK: - Buttons
             .overlay(
@@ -116,7 +156,7 @@ struct ContentView: View {
             .overlay(
                 //Info
                 Button(action: {
-                    print("Info")
+                    self.isShowingInfoView = true
                 }) {
                     Image(systemName: "info.circle")
                 }
@@ -128,6 +168,9 @@ struct ContentView: View {
             
             // MARK: - Popup
         } //: ZStack
+        .sheet(isPresented: $isShowingInfoView) {
+            InfoView()
+        }
     }
 }
 
