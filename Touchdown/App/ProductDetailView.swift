@@ -23,10 +23,14 @@ struct ProductDetailView: View {
             // DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
+                .zIndex(1)
             
             // DETAIL BOTTOM PART
             VStack(alignment: .center, spacing: 0) {
                 // RATINGS + SIZES
+                RatingsSizesDetailView()
+                    .padding(.top, -20)
+                    .padding(.bottom, 10)
                 
                 // DESCRIPTION
                 ScrollView(.vertical, showsIndicators: false) {
@@ -35,14 +39,23 @@ struct ProductDetailView: View {
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
                 } //: ScrollView
+                
                 // QUANTITY + FAVORITE
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 10)
                 
                 // ADD TO CART
-                Spacer()
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
             } //: VStack
             .padding(.horizontal)
-            .background(Color.white)
+            .background(
+                Color.white
+                    .clipShape(CustomShape())
+                    .padding(.top, -105)
+            )
         } //: VStack
+        .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(Color(
             red: sampleProduct.red,
