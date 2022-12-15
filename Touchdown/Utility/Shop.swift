@@ -8,6 +8,6 @@
 import Foundation
 
 class Shop: ObservableObject {
-    var showingProduct: Bool = false
-    var selectedProduct: Product? = nil
+    @Published var showingProduct: Bool = false
+    @Published var selectedProduct: Product? = nil
 }
